@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment[es]=Programa para el operador de radio.
+Comment=Programa para el operador de radio.
+Exec=iradit
+GenericName[es]=iRadit
+GenericName=iRadit
+Icon=/usr/share/pixmaps/iradit.svg
+Name[es]=iRadit
+Name=iRadit
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+Categories=AudioVideo;Player;Music;Multimedia;Qt;
