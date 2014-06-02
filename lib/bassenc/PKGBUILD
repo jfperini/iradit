@@ -10,9 +10,9 @@ url="http://www.un4seen.com/bass.html#addons"
 license=('custom:basslicence')
 depends=(libbass)
 makedepends=(unzip)
-source=(http://us.un4seen.com/files/bassenc24-linux.zip basslicence)
+source=(http://us.un4seen.com/files/bassenc24-linux.zip LICENSE)
 md5sums=('a9c967800e021d9d31a3a795f04d94b3'
-'9ba933735ead25f00741f2e6d3abed05')
+	 '9ba933735ead25f00741f2e6d3abed05')
 
 
 package() {
@@ -22,7 +22,7 @@ package() {
 	mkdir -p $pkgdir/usr/share/doc/$pkgname
 	mkdir -p $pkgdir/usr/include
 
-	cp $srcdir/basslicence $pkgdir/usr/share/licenses/$pkgname
+	cp $srcdir/LICENSE $pkgdir/usr/share/licenses/$pkgname
 	cp $srcdir/bassenc.chm $pkgdir/usr/share/doc/$pkgname
 	
 	[ "$CARCH" == i686 ] && install -Dm755 $srcdir/$pkgname.so $pkgdir/usr/lib/
@@ -34,7 +34,7 @@ package() {
 	# and just in case...
 
 	chmod -R 755 $pkgdir/usr/lib/$pkgname.so
-	chmod -R 644 $pkgdir/usr/share/licenses/$pkgname/basslicence
+	chmod -R 644 $pkgdir/usr/share/licenses/$pkgname/LICENSE
 	chmod -R 644 $pkgdir/usr/share/doc/$pkgname/bassenc.chm
 	chmod -R 644 $pkgdir/usr/include/bassenc.h
 }

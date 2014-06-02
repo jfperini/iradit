@@ -1,4 +1,6 @@
-# Maintainer: Robert La Spina <rkidlaspina [at] gmail [dot] com>
+# Maintainer:  jfperini <@jfperini>
+# Contributor: jfperini <@jfperini>
+
 pkgname=libbass
 pkgver=2.4.10
 pkgrel=3
@@ -12,10 +14,6 @@ provides=(libbass-mp3-free)
 source=(http://us.un4seen.com/files/bass24-linux.zip LICENSE)
 md5sums=('89dfde09729fffb34c0be2df4f646e48'
          '9ba933735ead25f00741f2e6d3abed05')
-
-#build() {
-#
-#}
 
 package() {
 	mkdir -p $pkgdir/usr/lib/
